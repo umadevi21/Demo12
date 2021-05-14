@@ -1,0 +1,11 @@
+node{
+    stage ("build"){
+        echo 'this is build part from pipeline'
+        git 'https://github.com/umadevi21/Demo12.git'
+    }
+  stage("deploy"){
+    echo 'this is deployment'
+   sh 'cat dev1.txt'
+
+  }
+}
